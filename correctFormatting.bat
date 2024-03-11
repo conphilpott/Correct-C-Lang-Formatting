@@ -26,4 +26,4 @@ pause
 
 cls
 echo Processed !i! of %j% files, press any key to exit.
-pause>nul
+timeout /T 5
