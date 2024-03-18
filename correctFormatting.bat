@@ -1,6 +1,8 @@
 @echo off
 setlocal enableextensions enabledelayedexpansion
 
+:: Written by Connor Philpott
+
 title Correct C Language Formatting
 echo Correct C Language Formatting
 echo.
@@ -21,9 +23,9 @@ echo Processing file !i! of %j%
 echo %%b
 echo.
 start /wait /B .\clang-format.exe -style=file .\msvc.conf -i %%b
-pause
 )
 
-cls
+echo.
 echo Processed !i! of %j% files, press any key to exit.
+echo.
 timeout /T 5
